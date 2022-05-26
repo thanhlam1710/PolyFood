@@ -1,0 +1,348 @@
+.modal {
+    z-index: 20;
+    display: flex;
+    position: fixed;
+    top: -8px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.modal-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+}
+
+.modal-content {
+    position: relative;
+    border-radius: 4px;
+    background-color: #fff;
+    /* height: 560px; */
+    width: 800px;
+    margin: auto;
+    z-index: 6;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+    pointer-events: auto;
+}
+
+.modal-body input:focus {
+    border: 1px solid var(--color-primary);
+    outline: none;
+}
+
+.modal-content .modal-close {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-content .modal-close:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.modal-header {
+    /* overflow: hidden; */
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-dark);
+    padding: 1rem 1.4rem;
+    background: #E0E0E0;
+}
+
+.modal-content .modal-body {
+    padding: 0 1.4rem 1rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.order-left {
+    overflow: hidden;
+    padding-right: 2rem;
+    position: relative;
+    /* border-right: 1px solid var(--color-gray); */
+}
+
+.order-left::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 26rem;
+    background: var(--color-gray);
+    top: 16px;
+    right: 0;
+}
+
+.order-left .order-left-top {
+    display: flex;
+    padding-bottom: 1.2rem;
+}
+
+.order-left .order-left-img {
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5.3rem;
+}
+
+.order-left-detail {
+    color: var(--color-dark);
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    white-space: wrap;
+}
+
+.order-left-detail .order-left-name {
+    font-size: 1.6rem;
+    color: #252525;
+    font-weight: 700;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.order-left-info {
+    margin-top: 2rem;
+}
+
+.order-left-heading {
+    display: flex;
+    align-items: center;
+    color: #EE4D2D;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.order-left-heading img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 8px;
+}
+
+.order-left-data .data-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.data-item {
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.data-item .data-label {
+    color: var(--color-text);
+}
+
+.data-item .data-input {
+    margin-top: 6px;
+    border-radius: 3px;
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid var(--color-gray);
+    outline: none;
+    color: var(--color-dark);
+}
+
+.order-right-top {
+    background: var(--color-white);
+}
+
+.order-right {
+    font-size: 1.4rem;
+}
+
+.order-right-top .order-right-top-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-right-top-heading .order-right-title {
+    color: #EE4D2D;
+    font-weight: 600;
+}
+
+.order-right-top-heading a>.fa.fa-angle-right {
+    font-size: 2rem;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.order-right-list {
+    max-height: 9rem;
+    overflow-y: auto;
+}
+
+.order-right-item {
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.order-right-item:not(:first-child) {
+    margin-bottom: 1rem;
+}
+
+.order-right-item-number {
+    font-size: 12px;
+    text-align: center;
+    color: var(--color-white);
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: var(--color-primary);
+    line-height: 1.4rem;
+    border-radius: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.order-right-item-name {
+    flex: 1;
+    padding-left: 1rem;
+    padding-right: 8px;
+    font-size: 1.4rem;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.order-right-body .order-right-total {
+    font-size: 1.4rem;
+    color: var(--color-text);
+    padding: 8px 0;
+}
+
+.order-right-total .order-right-total-number {
+    font-weight: bold;
+}
+
+.order-right-body .col.l-4,
+.order-right-body .col.l-3 {
+    text-align: right;
+}
+
+.order-right-total .col.l-4 {
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.order-right-promotion .col.l-8 {
+    display: flex;
+    align-items: center;
+}
+
+.order-right-transport,
+.order-right-promotion,
+.order-right-paymethod,
+.order-right-billtotal {
+    padding: 8px 0;
+}
+
+.order-right-promotion {
+    background: #FBF9D8;
+}
+
+.order-promotion-text {
+    padding-right: 4px;
+}
+
+.order-promotion-input {
+    width: 10rem;
+    padding: 4px 6px;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid var(--color-gray);
+}
+
+.order-promotion-button {
+    border-radius: 3px;
+    padding: 4px 6px;
+    color: #fff;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    background: #329900;
+}
+
+.order-promotion-button:hover {
+    background: #4c9726;
+    cursor: pointer;
+}
+
+.paymethod-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.paymethod-group .paymethod-action {
+    display: flex;
+    align-items: center;
+    margin-right: 1.2rem;
+}
+
+.paymethod-action .paymethod-action-text {
+    margin-right: 5px;
+}
+
+.order-right-billtotal {
+    background: #FBF9D8;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.order-right-note {
+    padding: 8px 1rem 0;
+}
+
+.order-right-note textarea {
+    font-size: 1.3rem;
+    padding: 0 2.5rem 0 0;
+    height: 3rem;
+    margin: 0;
+    min-height: inherit;
+    width: 100%;
+    max-width: 100%;
+    overflow-y: hidden;
+    resize: none;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.button-order-confirm {
+    text-align: center;
+    position: relative;
+}
+
+.button-order-confirm input {
+    color: var(--color-white);
+    background: var(--color-primary);
+    width: 100%;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.button-order-confirm input:hover {
+    background: #f77f16;
+    cursor: pointer;
+}

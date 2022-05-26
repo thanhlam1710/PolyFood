@@ -1,0 +1,19 @@
+.description-food {
+    height: 16rem;
+}
+
+.ck.ck-reset {
+    width: 464px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #EE4D2D;
+}
+
+.ck-content {
+    height: 8rem;
+}
+
+.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused:focus {
+    border: 1px solid #ff7800;
+    outline: none;
+}

@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="grid width">
+                <div class="header-contain">
+                    <div class="header-logo">
+                        <!-- <img srcset="./images/logo/header-logo.png 2x" alt="" class="logo-img"> -->
+                        <a href="#" class="logo-link">
+                            <img class="logo-img" src="./images/logo/header-logo2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header-location">
+                        <nav class="location-menu">
+                            <ul class="location-list">
+                                <li class="location-dropdown">
+                                    <div class="dropdown-heading">
+                                        <span>Địa điểm</span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </div>
+                                    <ul class="dropdown-show">
+                                        <li class="show-item">
+                                            <a class="show-link" href="#">
+                                                <span class="show-link-city">Hồ Chí Minh</span>
+                                                <span class="show-link-quantity">10 địa điểm</span>
+                                            </a>
+                                        </li>
+                                        <li class="show-item">
+                                            <a class="show-link" href="#">
+                                                <span class="show-link-city">Hà Nội</span>
+                                                <span class="show-link-quantity">10 địa điểm</span>
+                                            </a>
+                                        </li>
+                                        <li class="show-item">
+                                            <a class="show-link" href="#">
+                                                <span class="show-link-city">Hồ Chí Minh</span>
+                                                <span class="show-link-quantity">10 địa điểm</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-search">
+                        <form class="search-form" action="#" method="" name="">
+                            <input class="search-input" type="text" placeholder="Nhập tìm kiếm">
+                        </form>
+                        <button class="btn btn-search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="header-cart">
+                        <div class="cart-contain">
+                            <a href="./index.html" class="cart-link">
+                                <svg class="cart-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="395.025px" height="395.025px" viewBox="0 0 395.025 395.025" style="enable-background:new 0 0 395.025 395.025;"
+                                    xml:space="preserve">
+                            <g>
+                             <path style="fill: #ff7800;" d="M357.507,380.982L337.914,82.223c-0.431-6.572-5.887-11.682-12.473-11.682h-54.69V62.5c0-34.462-28.038-62.5-62.5-62.5
+                                        h-21.495c-34.462,0-62.5,28.038-62.5,62.5v8.041h-54.69c-6.586,0-12.042,5.11-12.473,11.682L37.45,381.709
+                                        c-0.227,3.449,0.986,6.838,3.35,9.361c2.364,2.525,5.666,3.955,9.124,3.955h295.159c0.007,0,0.013,0,0.02,0
+                                        c6.903,0,12.5-5.596,12.5-12.5C357.601,382.004,357.57,381.488,357.507,380.982z M149.255,62.5c0-20.678,16.822-37.5,37.5-37.5
+                                        h21.495c20.678,0,37.5,16.822,37.5,37.5v8.041h-96.495V62.5z M63.27,370.025L81.272,95.542h42.983v11.154
+                                        c-8.895,4.56-15,13.818-15,24.482c0,15.164,12.336,27.5,27.5,27.5s27.5-12.336,27.5-27.5c0-10.664-6.105-19.922-15-24.482V95.542
+                                        h96.495v11.154c-8.896,4.56-15,13.818-15,24.482c0,15.164,12.336,27.5,27.5,27.5s27.5-12.336,27.5-27.5
+                                        c0-10.664-6.105-19.922-15-24.482V95.542h42.983l18.002,274.483H63.27z"/>
+                            </g>
+                        </svg>
+                                <!-- <span class="cart-text">Giỏ hàng</span> -->
+                            </a>
+                            <div class="cart-list cart-list--nocart">
+                                <img src="./images/logo/logo-empty.png" alt="" class="cart-img">
+                                <p class="cart-list-text">Giỏ hàng trống</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-auth">
+                        <nav class="auth-menu">
+                            <ul class="auth-list">
+                                <!-- <li class="auth-item">
+                                    <a href="./register.html" class="auth-link  header-menu--line" style="font-size: 1.4rem;">Đăng kí</a>
+                                </li> -->
+                                <!--  -->
+                                <!-- <li class="auth-item btn btn-login">
+                                    <a href="./login.html" class="auth-signin" style="font-size: 1.4rem;">Đăng nhập</a>
+                                </li> -->
+                                <li class="auth-item">
+                                    <a href="./login.html" class="auth-user" style="font-size: 1.4rem;">
+                                        <img src="./images/logo/logo-user.png" alt="" class="user-img">
+                                        <span class="user-name">Le Trung Le Trung Le Trung</span>
+                                        <i class="fa fa-caret-down user-icon-down"></i>
+                                    </a>
+                                    <ul class="user-list">
+                                        <li class="user-item">
+                                            <a href="#" class="user-link">
+                                                <img src="./images/icon/icon-admin.svg" alt="" class="user-icon">
+                                                <span>Admin</span>
+                                            </a>
+                                            <a href="#" class="user-link">
+                                                <img src="./images/icon/icon-history.svg" alt="" class="user-icon">
+                                                <span>Lịch sử mua hàng</span>
+                                            </a>
+                                            <a href="#" class="user-link">
+                                                <img src="./images/icon/icon-user.svg" alt="" class="user-icon">
+                                                <span>Cập nhật tài khoản</span>
+                                            </a>
+                                            <a href="#" class="user-link">
+                                                <img src="./images/icon/icon-store.svg" alt="" class="user-icon">
+                                                <span>Gian hàng</span>
+                                            </a>
+                                            <a href="#" class="user-link">
+                                                <img src="./images/icon/icon-logout.svg" alt="" class="user-icon">
+                                                <span>Đăng xuất</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="app-detail">
+            <section class="section-heading-store">
+                <div class="grid width">
+                    <div class="heading-store-contain row">
+                        <div class="col l-5">
+                            <div class="store-contain-left">
+                                <img src="./images/store-detail/store-left.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col l-7">
+                            <div class="store-contain-right">
+                                <div class="nav">
+                                    <ul class="nav-list">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Home</a>
+                                            <i class="fa fa-angle-double-right"></i>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">TP.HCM</a>
+                                            <i class="fa fa-angle-double-right"></i>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Bún Tôm</a>
+                                            <i class="fa fa-angle-double-right"></i>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Lê Văn Thọ</a>
+                                            <i class="fa fa-angle-double-right"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="store-kind">
+                                    <div class="store-favorite">
+                                        <div class="btn favorite-btn">
+                                            <i class="fa fa-thumbs-up"></i>
+                                            <span class="favorite-text">Yêu thích</span>
+                                        </div>
+                                    </div>
+                                    <span>
+                                        Ăn vặt/Vỉa hè -
+                                        <span>
+                                            <a href="#" class="store-kind-link">
+                                                Chi nhánh
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="store-name">
+                                    <h2>
+                                        <span class="name-shop">Gia Lai quán -</span>
+                                        <span class="name-food">Bún thịt nướng cuốn lá lốpfagagagagagagagagagagagagagaga</span>
+                                    </h2>
+                                </div>
+                                <div class="store-address">
+                                    <p class="heading-address">
+                                        <span class="address-street">169 Huỳnh Văn Nghệ,&nbsp;</span>
+                                        <span class="address-ward">P.12,&nbsp;</span>
+                                        <span class="address-district">Gò Vấp,&nbsp;</span>
+                                        <span class="address-province">Tp.Hồ Chí Minh&nbsp;</span>
+                                    </p>
+                                </div>
+                                <div class="store-ratting">
+                                    <div class="store-star">
+                                        <span class="star-full">
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="star-full">
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="star-full">
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="star-full">
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="star-full">
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="star-full" style="display: none;">
+                                            <i class="fa fa-star-half-full"></i>
+                                        </span>
+                                    </div>
+                                    <span class="store-ratting-quantity">
+                                        999+
+                                    </span>
+                                    <span class="store-polyfood">
+                                        đánh giá trên Polyfood
+                                    </span>
+                                </div>
+                                <div class="store-more-ratting">
+                                    <a href="#" class="">Xem thêm lượt đánh giá từ Foody</a>
+                                </div>
+                                <div class="store-status">
+                                    <div class="store-open">
+                                        <span class="open-online">
+                                            <i class="fa fa-circle"></i>
+                                            <span class="open-door">
+                                                Mở cửa
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="store-time">
+                                        <span class="time-clock">
+                                            <i class="fa fa-clock-o"></i>
+                                        </span>
+                                        <span class="time-stamp">                                          
+                                            6:00 - 22:30
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="store-cost">
+                                    <i class="fa fa-money"></i>
+                                    <span class="cost-detail">15.000 - 50.000</span>
+                                </div>
+                                <div class="store-line" style="border-bottom: 1px solid var(--color-blue);">
+
+                                </div>
+                                <div class="store-service">
+                                    <div class="service-cost">
+                                        <div class="service-cost-title">
+                                            <span class="cost-title">Phí dịch vụ</span>
+                                        </div>
+                                        <div class="service-cost-contain">
+                                            <span class="cost-contain">
+                                                0.0% phí dịch vụ
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="service-by">
+                                        <div class="service-by-title">
+                                            <span class="by-title">Dịch vụ bởi</span>
+                                        </div>
+                                        <div class="service-by-contain">
+                                            <span class="by-contain">Polyfood</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-body-store">
+                <div class="grid width">
+                    <div class="store-tab-name">
+                        <h2>Thực đơn</h2>
+                    </div>
+                    <div class="body-store-contain row">
+                        <div class="col l-9">
+                            <div class="wrapper-contain">
+                                <div class="store-contain-wrapper">
+                                    <div class="store-contain-menu">
+                                        <div class="store-menu">
+                                            <ul class="store-menu-list">
+                                                <li class="store-menu-item">
+                                                    <a href="#" class="store-menu-link sactive">
+                                                    Món đang giảm giá gajg;aja;jagjagjlffffffffffgagagagagag
+                                                </a>
+                                                </li>
+                                                <li class="store-menu-item">
+                                                    <a href="#" class="store-menu-link">
+                                                    Hot deal tháng 11
+                                                </a>
+                                                </li>
+                                                <li class="store-menu-item">
+                                                    <a href="#" class="store-menu-link">
+                                                    Hot deal 1k
+                                                </a>
+                                                </li>
+                                                <li class="store-menu-item">
+                                                    <a href="#" class="store-menu-link">
+                                                    Súp đơn
+                                                </a>
+                                                </li>
+                                                <li class="store-menu-item">
+                                                    <a href="#" class="store-menu-link">
+                                                    Món súp mix
+                                                </a>
+                                                </li>
+                                                <li class="store-menu-item">
+                                                    <a href="#" class="store-menu-link">
+                                                    More food
+                                                </a>
+                                                </li>
+                                                <li class="store-menu-item">
+                                                    <a href="#" class="store-menu-link">
+                                                    Món gọi thêm
+                                                </a>
+                                                </li>
+                                                <li class="store-menu-item">
+                                                    <a href="#" class="store-menu-link">
+                                                    New drinks
+                                                </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="store-contain-detail">
+                                        <div class="detail-promotion">
+                                            <div class="promotion-item">
+                                                <div class="promotion-content">
+                                                    <span><i class="fa fa-tag"></i></span>
+                                                    <span class="promotion-code"> Nhập "SIEUTIEC10": Giảm 10k, đơn tối thiểu 20k</span>
+                                                </div>
+                                                <button class="promotion-copy">
+                                                    <span class="promotion-copy-code">Copy code</span>
+                                                    <span class="promotion-copy-icon"><i class="fa fa-clipboard"></i></span>                                    
+                                                </button>
+                                            </div>
+                                            <div class="promotion-item">
+                                                <div class="promotion-content">
+                                                    <span><i class="fa fa-tag"></i></span>
+                                                    <span class="promotion-code"> Nhập "SIEUTIEC10": Giảm 10k, đơn tối thiểu 20k</span>
+                                                </div>
+                                                <button class="promotion-copy">
+                                                    <span class="promotion-copy-code">Copy code</span>
+                                                    <span class="promotion-copy-icon"><i class="fa fa-clipboard"></i></span>                                    
+                                                </button>
+                                            </div>
+                                            <div class="promotion-item">
+                                                <div class="promotion-content">
+                                                    <span><i class="fa fa-tag"></i></span>
+                                                    <span class="promotion-code"> Nhập "SIEUTIEC10": Giảm 10k, đơn tối thiểu 20k</span>
+                                                </div>
+                                                <button class="promotion-copy">
+                                                    <span class="promotion-copy-code">Copy code</span>
+                                                    <span class="promotion-copy-icon"><i class="fa fa-clipboard"></i></span>                                    
+                                                </button>
+                                            </div>
+                                            <div class="promotion-item">
+                                                <div class="promotion-content">
+                                                    <span><i class="fa fa-tag"></i></span>
+                                                    <span class="promotion-code"> Nhập "SIEUTIEC10": Giảm 10k, đơn tối thiểu 20k</span>
+                                                </div>
+                                                <button class="promotion-copy">
+                                                    <span class="promotion-copy-code">Copy code</span>
+                                                    <span class="promotion-copy-icon"><i class="fa fa-clipboard"></i></span>                                    
+                                                </button>
+                                            </div>
+                                            <div class="promotion-item">
+                                                <div class="promotion-content">
+                                                    <span><i class="fa fa-tag"></i></span>
+                                                    <span class="promotion-code"> Nhập "SIEUTIEC10": Giảm 10k, đơn tối thiểu 20k</span>
+                                                </div>
+                                                <button class="promotion-copy">
+                                                    <span class="promotion-copy-code">Copy code</span>
+                                                    <span class="promotion-copy-icon"><i class="fa fa-clipboard"></i></span>                                    
+                                                </button>
+                                            </div>
+                                            <div class="promotion-item">
+                                                <div class="promotion-content">
+                                                    <span><i class="fa fa-tag"></i></span>
+                                                    <span class="promotion-code"> Nhập "SIEUTIEC10": Giảm 10k, đơn tối thiểu 20k</span>
+                                                </div>
+                                                <button class="promotion-copy">
+                                                    <span class="promotion-copy-code">Copy code</span>
+                                                    <span class="promotion-copy-icon"><i class="fa fa-clipboard"></i></span>                                    
+                                                </button>
+                                            </div>
+                                            <div class="promotion-item">
+                                                <div class="promotion-content">
+                                                    <span><i class="fa fa-tag"></i></span>
+                                                    <span class="promotion-code"> Nhập "SIEUTIEC10": Giảm 10k, đơn tối thiểu 20k</span>
+                                                </div>
+                                                <button class="promotion-copy">
+                                                    <span class="promotion-copy-code">Copy code</span>
+                                                    <span class="promotion-copy-icon"><i class="fa fa-clipboard"></i></span>                                    
+                                                </button>
+                                            </div>
+                                            <div class="promotion-item">
+                                                <div class="promotion-content">
+                                                    <span><i class="fa fa-tag"></i></span>
+                                                    <span class="promotion-code"> Nhập "SIEUTIEC10": Giảm 10k, đơn tối thiểu 20k</span>
+                                                </div>
+                                                <button class="promotion-copy">
+                                                    <span class="promotion-copy-code">Copy code</span>
+                                                    <span class="promotion-copy-icon"><i class="fa fa-clipboard"></i></span>                                    
+                                                </button>
+                                            </div>
+                                            <div class="promotion-item">
+                                                <div class="promotion-content">
+                                                    <span><i class="fa fa-tag"></i></span>
+                                                    <span class="promotion-code"> Nhập "SIEUTIEC10": Giảm 10k, đơn tối thiểu 20k</span>
+                                                </div>
+                                                <button class="promotion-copy">
+                                                    <span class="promotion-copy-code">Copy code</span>
+                                                    <span class="promotion-copy-icon"><i class="fa fa-clipboard"></i></span>                                    
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="detail-food">
+                                            <div class="food-search">
+                                                <form action="#" name="searchkey" class="food-search-form">
+                                                    <input type="text" class="food-search-input" placeholder="Tìm món">
+                                                </form>
+                                                <button class="food-search-button">
+                                                    <i class="food-search-icon fa fa-search"></i>
+                                                </button>
+                                            </div>
+                                            <div class="food-item">
+                                                <div class="food-item-contain">
+                                                    <div class="food-item-title">
+                                                        <h3>Menu</h3>
+                                                    </div>
+                                                    <div class="food-item-list">
+                                                        <div class="food-item-list-left">
+                                                            <div class="left-name">
+                                                                <h3>Món đang Giảm</h3>
+                                                            </div>
+                                                            <div class="row left-contain">
+                                                                <div class="col l-2 left-contain-img">
+                                                                    <a href="#" class="left-contain-img-link">
+                                                                        <img src="./images/product/peach-tea.jpg" alt="foods">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col l-7 left-contain-infor">
+                                                                    <h3>1 trà đào đang giảm</h3>
+                                                                    <div class="left-contain-order">
+                                                                        <span class="left-contain-ordered">
+                                                                             Đã được đặt
+                                                                        </span>
+                                                                        <span class="left-contain-quantity">
+                                                                                &nbsp;
+                                                                                500+
+                                                                        </span>
+                                                                        <span class="left-contain-time">
+                                                                                 lần
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col l-3 food-item-add">
+                                                                    <div class="food-item-add-contain">
+                                                                        <div class="food-item-price">
+                                                                            <div class="old-price">
+                                                                                <span class="price-line">
+                                                                                     45.000
+                                                                                </span>
+                                                                                <span class="price-line-unit">
+                                                                                        đ
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="new-price">
+                                                                                <span class="price-noline">
+                                                                                30.000
+                                                                            </span>
+                                                                                <span class="price-new-unit">
+                                                                                đ
+                                                                            </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="food-item-addbutton">
+                                                                            <span class="addbutton">
+                                                                                <i class="fa fa-plus-square"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="food-item-list-left">
+                                                            <div class="left-name">
+                                                                <h3>Món đang Giảm</h3>
+                                                            </div>
+                                                            <div class="row left-contain">
+                                                                <div class="col l-2 left-contain-img">
+                                                                    <a href="#" class="left-contain-img-link">
+                                                                        <img src="./images/product/peach-tea.jpg" alt="foods">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col l-7 left-contain-infor">
+                                                                    <h3>1 trà đào đang giảm</h3>
+                                                                    <div class="left-contain-order">
+                                                                        <span class="left-contain-ordered">
+                                                                             Đã được đặt
+                                                                        </span>
+                                                                        <span class="left-contain-quantity">
+                                                                                &nbsp;
+                                                                                500+
+                                                                        </span>
+                                                                        <span class="left-contain-time">
+                                                                                 lần
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col l-3 food-item-add">
+                                                                    <div class="food-item-add-contain">
+                                                                        <div class="food-item-price">
+                                                                            <div class="old-price">
+                                                                                <span class="price-line">
+                                                                                     45.000
+                                                                                </span>
+                                                                                <span class="price-line-unit">
+                                                                                        đ
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="new-price">
+                                                                                <span class="price-noline">
+                                                                                30.000
+                                                                            </span>
+                                                                                <span class="price-new-unit">
+                                                                                đ
+                                                                            </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="food-item-addbutton">
+                                                                            <span class="addbutton">
+                                                                                <i class="fa fa-plus-square"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="food-item-list-left">
+                                                            <div class="left-name">
+                                                                <h3>Món đang Giảm</h3>
+                                                            </div>
+                                                            <div class="row left-contain">
+                                                                <div class="col l-2 left-contain-img">
+                                                                    <a href="#" class="left-contain-img-link">
+                                                                        <img src="./images/product/peach-tea.jpg" alt="foods">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col l-7 left-contain-infor">
+                                                                    <h3>1 trà đào đang giảm</h3>
+                                                                    <div class="left-contain-order">
+                                                                        <span class="left-contain-ordered">
+                                                                             Đã được đặt
+                                                                        </span>
+                                                                        <span class="left-contain-quantity">
+                                                                                &nbsp;
+                                                                                500+
+                                                                        </span>
+                                                                        <span class="left-contain-time">
+                                                                                 lần
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col l-3 food-item-add">
+                                                                    <div class="food-item-add-contain">
+                                                                        <div class="food-item-price">
+                                                                            <div class="old-price">
+                                                                                <span class="price-line">
+                                                                                     45.000
+                                                                                </span>
+                                                                                <span class="price-line-unit">
+                                                                                        đ
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="new-price">
+                                                                                <span class="price-noline">
+                                                                                30.000
+                                                                            </span>
+                                                                                <span class="price-new-unit">
+                                                                                đ
+                                                                            </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="food-item-addbutton">
+                                                                            <span class="addbutton">
+                                                                                <i class="fa fa-plus-square"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="food-item-list-left">
+                                                            <div class="left-name">
+                                                                <h3>Món đang Giảm</h3>
+                                                            </div>
+                                                            <div class="row left-contain">
+                                                                <div class="col l-2 left-contain-img">
+                                                                    <a href="#" class="left-contain-img-link">
+                                                                        <img src="./images/product/peach-tea.jpg" alt="foods">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col l-7 left-contain-infor">
+                                                                    <h3>1 trà đào đang giảm</h3>
+                                                                    <div class="left-contain-order">
+                                                                        <span class="left-contain-ordered">
+                                                                             Đã được đặt
+                                                                        </span>
+                                                                        <span class="left-contain-quantity">
+                                                                                &nbsp;
+                                                                                500+
+                                                                        </span>
+                                                                        <span class="left-contain-time">
+                                                                                 lần
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col l-3 food-item-add">
+                                                                    <div class="food-item-add-contain">
+                                                                        <div class="food-item-price">
+                                                                            <div class="old-price">
+                                                                                <span class="price-line">
+                                                                                     45.000
+                                                                                </span>
+                                                                                <span class="price-line-unit">
+                                                                                        đ
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="new-price">
+                                                                                <span class="price-noline">
+                                                                                30.000
+                                                                            </span>
+                                                                                <span class="price-new-unit">
+                                                                                đ
+                                                                            </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="food-item-addbutton">
+                                                                            <span class="addbutton">
+                                                                                <i class="fa fa-plus-square"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="food-item-list-left">
+                                                            <div class="left-name">
+                                                                <h3>Món đang Giảm</h3>
+                                                            </div>
+                                                            <div class="row left-contain">
+                                                                <div class="col l-2 left-contain-img">
+                                                                    <a href="#" class="left-contain-img-link">
+                                                                        <img src="./images/product/peach-tea.jpg" alt="foods">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col l-7 left-contain-infor">
+                                                                    <h3>1 trà đào đang giảm</h3>
+                                                                    <div class="left-contain-order">
+                                                                        <span class="left-contain-ordered">
+                                                                             Đã được đặt
+                                                                        </span>
+                                                                        <span class="left-contain-quantity">
+                                                                                &nbsp;
+                                                                                500+
+                                                                        </span>
+                                                                        <span class="left-contain-time">
+                                                                                 lần
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col l-3 food-item-add">
+                                                                    <div class="food-item-add-contain">
+                                                                        <div class="food-item-price">
+                                                                            <div class="old-price">
+                                                                                <span class="price-line">
+                                                                                     45.000
+                                                                                </span>
+                                                                                <span class="price-line-unit">
+                                                                                        đ
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="new-price">
+                                                                                <span class="price-noline">
+                                                                                30.000
+                                                                            </span>
+                                                                                <span class="price-new-unit">
+                                                                                đ
+                                                                            </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="food-item-addbutton">
+                                                                            <span class="addbutton">
+                                                                                <i class="fa fa-plus-square"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="food-item-list-left">
+                                                            <div class="left-name">
+                                                                <h3>Món đang Giảm</h3>
+                                                            </div>
+                                                            <div class="row left-contain">
+                                                                <div class="col l-2 left-contain-img">
+                                                                    <a href="#" class="left-contain-img-link">
+                                                                        <img src="./images/product/peach-tea.jpg" alt="foods">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col l-7 left-contain-infor">
+                                                                    <h3>1 trà đào đang giảm</h3>
+                                                                    <div class="left-contain-order">
+                                                                        <span class="left-contain-ordered">
+                                                                             Đã được đặt
+                                                                        </span>
+                                                                        <span class="left-contain-quantity">
+                                                                                &nbsp;
+                                                                                500+
+                                                                        </span>
+                                                                        <span class="left-contain-time">
+                                                                                 lần
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col l-3 food-item-add">
+                                                                    <div class="food-item-add-contain">
+                                                                        <div class="food-item-price">
+                                                                            <div class="old-price">
+                                                                                <span class="price-line">
+                                                                                     45.000
+                                                                                </span>
+                                                                                <span class="price-line-unit">
+                                                                                        đ
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="new-price">
+                                                                                <span class="price-noline">
+                                                                                30.000
+                                                                            </span>
+                                                                                <span class="price-new-unit">
+                                                                                đ
+                                                                            </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="food-item-addbutton">
+                                                                            <span class="addbutton">
+                                                                                <i class="fa fa-plus-square"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3">
+                            <div class="bill-contain">
+                                <div class="bill-heading">
+                                    <div class="bill-button">
+                                        <button class="bill-portion">
+                                            <span class="portion-food">
+                                                0
+                                            </span>
+                                            phần
+                                            &nbsp;-&nbsp;
+                                            <span class="portion-people">
+                                                0
+                                            </span>
+                                            người
+                                        </button>
+                                        <button class="bill-delete">
+                                            Xóa
+                                        </button>
+                                    </div>
+                                    <div class="bill-creator">
+                                        Đơn hàng tạo bởi
+                                        <span class="bill-creator-name">
+                                            Le Trung
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="bill-ordering">
+                                    <div class="ordering-detail">
+                                        <ul class="ordering-list">
+                                            <li class="ordering-item">
+                                                <div class="ordering-edit">
+                                                    <button class="fa fa-plus-square"></button>
+                                                    <span class="ordering-quantity">1</span>
+                                                    <button class="fa fa-minus-square"></button>
+                                                    <span class="ordering-name">1 trứng bắc thảo</span>
+                                                </div>
+                                                <div class="ordering-note">
+                                                    <input type="text" class="ordering-input" placeholder="Thêm chú thích...">
+                                                    <span class="ordering-price">
+                                                    <span class="ordering-price-number">20000</span>
+                                                    <span class="ordering-price-unit">đ</span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="ordering-item">
+                                                <div class="ordering-edit">
+                                                    <button class="fa fa-plus-square"></button>
+                                                    <span class="ordering-quantity">1</span>
+                                                    <button class="fa fa-minus-square"></button>
+                                                    <span class="ordering-name">1 trứng bắc thảo</span>
+                                                </div>
+                                                <div class="ordering-note">
+                                                    <input type="text" class="ordering-input" placeholder="Thêm chú thích...">
+                                                    <span class="ordering-price">
+                                                        <span class="ordering-price-number">20000</span>
+                                                    <span class="ordering-price-unit">đ</span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bill-adding">
+                                    <div class="row">
+                                        <div class="col l-8">Cộng</div>
+                                        <div class="col l-4">
+                                            <span class="adding-price">
+                                                <span class="adding-number">45.000</span>
+                                            <span class="adding-unit">đ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bill-input">
+                                    Nhập mã khuyến mãi ở bước hoàn tất
+                                </div>
+                                <div class="bill-total">
+                                    <div class="row">
+                                        <div class="col l-8">Tổng cộng</div>
+                                        <div class="col l-4">
+                                            <span class="total-price">
+                                                <span class="total-number">45.000</span>
+                                            <span class="total-unit">đ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bill-confirm">
+                                    <button name="#" class="confirm-button" id="confirm-button">
+                                        <span class="confirm-icon">
+                                            <i class="fa fa-check-circle-o"></i>
+                                        </span>
+                                        Đặt trước
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="grid width">
+                <div class="row footer-container">
+                    <div class="col l-3 m-3 c-6 footer-first">
+                        <h3 class="footer-title">Công ty</h3>
+                        <ul class="footer-first-list">
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Giới thiệu</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Trung tâm Trợ giúp</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Quy chế</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Điều khoản sử dụng</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Bảo mật thông tin</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Giải quyết khiếu nại</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Liên hệ</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Hợp tác nhân viên giao nhận </a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Đăng kí quán</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6 footer-second">
+                        <h3 class="footer-title">Ứng dụng PolyFood</h3>
+                        <ul class="footer-second-list">
+                            <li class="footer-second-item">
+                                <a href="#" class="second-item-link">
+                                    <img src="./images/logo/logo-apple.png" alt="apple"></a>
+                            </li>
+                            <li class="footer-second-item">
+                                <a href="#" class="second-item-link">
+                                    <img src="./images/logo/logo-android.png" alt="google">
+                                </a>
+                            </li>
+                            <li class="footer-second-item">
+                                <a href="#" class="second-item-link">
+                                    <img src="./images/logo/logo-gallerry.png" alt="huawei">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6 footer-third">
+                        <img src="./images/logo/header-logo.png" alt="polyfood" class="footer-logo">
+                        <p class="footer-polyfood-text">@ 2021 Polyfood</p>
+                        <ul class="footer-third-list">
+                            <li class="footer-third-item">
+                                <a href="#" class="third-item-link">
+                                    <span class="third-item-icon">
+                                        <i class="fa fa-facebook"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="footer-third-item">
+                                <a href="#" class="third-item-link">
+                                    <span class="third-item-icon">
+                                        <i class="fa fa-instagram"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6 footer-last">
+                        <h3 class="footer-title">Địa chỉ công ty</h3>
+                        <ul class="footer-last-list">
+                            <p>Công Ty Cổ Phần Foody</p>
+                            <p>Lầu G, Tòa nhà Jabes 1,</p>
+                            <p>số 244 đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TPHCM</p>
+                            <p>Giấy CN ĐKDN số: 0311828036</p>
+                            <p>do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày 11/6/2012,</p>
+                            <p>sửa đổi lần thứ 23, ngày 10/12/2020</p>
+                            <p>Số điện thoại: 1900 2042</p>
+                            <p>Email:
+                                <a href="#" class="last-list-link">infor@polyfood.com</a>
+                            </p>
+                            <span class="register">
+                                <a href="http://online.gov.vn/Home/WebDetails/22739" class="register-link">
+                                    <img src="./images/logo/logo-registered.jpg" alt="" class="register-img">
+                                </a>
+                            </span>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Dựng form modal order detail -->
+    <div class="modal" id="modal">
+        <div class="modal-overlay">
+        </div>
+        <div class="modal-content" id="modal-content">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <div class="modal-header">
+                <p class="modal-title">Xác nhận đơn hàng</p>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="form" id="">
+                    <div class="row">
+                        <div class="col l-6 order-left">
+                            <div class="order-left-top">
+                                <img src="./images/icon/icon-cuahang.jpg" alt="" class="order-left-img">
+                                <div class="order-left-detail">
+                                    <div class="order-left-name">
+                                        <span class="name-shop">Gia Lai quán</span>
+                                        <span class="name-combine">-</span>
+                                        <span class="name-food">Bún thịt nướng ngon tuyệt</span>
+                                    </div>
+                                    <div class="order-left-addresss">
+                                        <span class="address-street">169 Huỳnh Văn Nghệ,&nbsp;</span>
+                                        <span class="address-ward">P.12,&nbsp;</span>
+                                        <span class="address-district">Gò Vấp,&nbsp;</span>
+                                        <span class="address-province">Tp.Hồ Chí Minh&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-left-body">
+                                <div class="order-left-info">
+                                    <div class="order-left-heading">
+                                        <img src="./images/icon/icon-user.svg" alt="">
+                                        <span>
+                                            Thông tin người đặt
+                                        </span>
+                                    </div>
+                                    <div class="order-left-data">
+                                        <div class="data-item">
+                                            <p class="data-label">Họ và tên</p>
+                                            <input class="data-input" type="text" name="" id="" placeholder="Nhập họ tên" required>
+                                        </div>
+                                        <div class="data-item">
+                                            <p class="data-label">Số điện thoại</p>
+                                            <input class="data-input" type="tel" name="" id="" placeholder="Nhập số điện thoại" required>
+                                        </div>
+                                        <div class="data-item">
+                                            <p class="data-label">Địa chỉ</p>
+                                            <input class="data-input" type="text" name="" id="" placeholder="Nhập địa chỉ" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 order-right">
+                            <div class="order-right-top">
+                                <div class="order-right-top-heading">
+                                    <span class="order-right-title">Chi tiết đơn hàng</span>
+                                    <a href="#">
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <ul class="order-right-list">
+                                    <li class="order-right-item">
+                                        <span class="order-right-item-number">1</span>
+                                        <div class="order-right-item-name">
+                                            <span>1 trứng bắc thảo</span>
+                                        </div>
+                                        <div class="order-right-item-price">
+                                            <span class="right-item-number">45.000</span>
+                                            <span class="right-item-unit">đ</span>
+                                        </div>
+                                    </li>
+                                    <li class="order-right-item">
+                                        <span class="order-right-item-number">2</span>
+                                        <div class="order-right-item-name">
+                                            <span>1 gà 45 kí</span>
+                                        </div>
+                                        <div class="order-right-item-price">
+                                            <span class="right-item-number">45.000</span>
+                                            <span class="right-item-unit">đ</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="order-right-price"></div>
+                            </div>
+                            <div class="order-right-body">
+                                <div class="order-right-total">
+                                    <div class="row">
+                                        <div class="col l-8">
+                                            Tổng cộng
+                                            <span class="order-right-total-number">2</span> phần
+                                        </div>
+                                        <div class="col l-4">
+                                            <span class="right-total-price">
+                                                <span class="right-total-number">45.000</span>
+                                            <span class="right-total-unit">đ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-right-transport">
+                                    <div class="row">
+                                        <div class="col l-8">
+                                            Phí vận chuyển
+                                        </div>
+                                        <div class="col l-4">
+                                            <span class="right-total-price">
+                                                <span class="right-total-number">25.000</span>
+                                            <span class="right-total-unit">đ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-right-promotion">
+                                    <div class="row">
+                                        <div class="col l-9">
+                                            <span class="order-promotion-text">
+                                                Mã khuyến mãi
+                                            </span>
+                                            <input class="order-promotion-input" type="text" name="" id="" placeholder="Nhập mã">
+                                        </div>
+                                        <div class="col l-3">
+                                            <input class="order-promotion-button" type="submit" name="" id="" value="Áp dụng">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-right-paymethod">
+                                    <p class="paymethod-title">Phương thức thanh toán</p>
+                                    <div class="paymethod-group">
+                                        <div class="paymethod-action">
+                                            <span class="paymethod-action-text">
+                                                Tiền mặt
+                                            </span>
+                                            <input type="radio" name="" id="" value="0" checked>
+                                        </div>
+                                        <div class="paymethod-action">
+                                            <span class="paymethod-action-text">
+                                                ATM/Banking
+                                            </span>
+                                            <input type="radio" name="" id="" value="1">
+                                        </div>
+                                        <div class="paymethod-action">
+                                            <span class="paymethod-action-text">
+                                                Ví Momo
+                                            </span>
+                                            <input type="radio" name="" id="" value="2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-right-billtotal">
+                                    <div class="row">
+                                        <div class="col l-8">Tổng cộng</div>
+                                        <div class="col l-4">
+                                            <span class="total-price">
+                                                <span class="total-number">45.000</span>
+                                            <span class="total-unit">đ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-right-note">
+                                    <textarea placeholder="Ví dụ: Tòa nhà ABC, lầu 8, cho thêm 2 ly nhựa...." name="textnote"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-order-confirm">
+                        <input type="submit" value="Đặt hàng" name="" id="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end form moddal order detail -->
+    <script src="./js/modal.js">
+    </script>
+</body>
+
+</html>

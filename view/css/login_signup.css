@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/banner/nen.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 65%;
+    background: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 0.1px;
+}
+
+.box-left>h1 {
+    text-align: center;
+    color: var(--color-text);
+}
+
+.box-header {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 65px;
+    background-color: #f2f2f2;
+}
+
+.fa-user {
+    font-size: 45px;
+    color: var(--color-primary);
+}
+
+form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.row i {
+    font-size: 30px;
+}
+
+a.form {
+    text-align: center;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb3 {
+    text-align: center;
+}
+
+a.form {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0288D1;
+}
+
+form input {
+    width: 64%;
+    border: 1px #ccc solid;
+    padding: 15px 10px;
+    border-radius: 40px;
+    font-size: 17px;
+    background: #ccc;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    margin-left: 163px;
+    background-color: orange;
+    border-radius: 100px;
+    color: #ccc;
+}
+
+.img2 {
+    width: 30px;
+    height: 30px;
+    margin-left: 300px;
+}
+
+input[type="submit"] {
+    width: 45%;
+    border-radius: 40px;
+    padding: 10px 10px;
+    background-color: rgb(250, 102, 3);
+    border: 1px #ccc solid;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box-left {
+    width: 50%;
+    padding: 20px 0;
+}
+
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 6px;
+    background-color: rgb(12, 131, 243);
+}
+
+a.button.mail {
+    background-color: rgba(12, 120, 230);
+}
+
+a.button.iclou {
+    background-color: black;
+}
+
+.box {
+    width: 50%;
+}
+
+.box img {
+    width: 100%;
+}
+
+/* 404 css */
+.container-404{
+    width: 40%;
+    background: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 0.1px;
+}
+.container-404 img{
+    width: 100%;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    [type="checkbox"] {
+        /* opacity: 0;
+        position: absolute; */
+    }
+    
+    .dropdown-checkbox label {
+        padding-left: 25px;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        height: 25px;
+        line-height: 25px;
+    }
+    
+    label::before {
+        content: "";
+        min-width: 0.75em;
+        min-height: 0.75em;
+        margin-right: 0.75em;
+        border: 2px solid currentColor;
+        /* border-radius: 50%; */
+        display: inline-block;
+    }
+    
+    [type="checkbox"]:checked~label::after {
+        border-color: blue;
+        background: blue;
+        box-shadow: inset 0 0 0 2px white;
+    }
+    
+    .input {
+        border: 1px solid #000;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <!-- <div class="col l-4 dropdown-checkbox">
+        <input type="checkbox" name="" id="" value="">
+        <label for="#">Quận 2</label>
+    </div> -->
+
+    <input class="input" type="checkbox" name="checkbox" />fafa
+    <script>
+        var checkbox = document.querySelector("input[type=checkbox]");
+
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                console.log("Checkbox is checked..");
+            } else {
+                console.log("Checkbox is not checked..");
+            }
+        });
+    </script>
+</body>
+
+</html>

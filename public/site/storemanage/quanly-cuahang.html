@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/quanly-cuahang.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="grid width">
+                <div class="header-contain">
+                    <div class="header-logo">
+                        <!-- <img srcset="images/logo/header-logo.png 2x" alt="" class="logo-img"> -->
+                        <a href="#" class="logo-link">
+                            <img class="logo-img" src="images/logo/header-logo2.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="header-title">
+                        <span>Quản lý cửa hàng</span>
+                    </div>
+
+                    <div class="header-auth">
+                        <nav class="auth-menu">
+                            <ul class="auth-list">
+                                <!-- <li class="auth-item">
+                                    <a href="./register.html" class="auth-link  header-menu--line" style="font-size: 1.4rem;">Đăng kí</a>
+                                </li> -->
+                                <!--  -->
+                                <!-- <li class="auth-item btn btn-login">
+                                    <a href="./login.html" class="auth-signin" style="font-size: 1.4rem;">Đăng nhập</a>
+                                </li> -->
+                                <li class="auth-item">
+                                    <a href="./login.html" class="auth-user" style="font-size: 1.4rem;">
+                                        <img src="images/logo/logo-user.png" alt="" class="user-img">
+                                        <span class="user-name">Trần Thanh Lâm</span>
+                                        <i class="fa fa-caret-down user-icon-down"></i>
+                                    </a>
+                                    <ul class="user-list">
+                                        <li class="user-item">
+                                            <a href="#" class="user-link">
+                                                <img src="images/icon/icon-cart.png" alt="" class="user-icon">
+                                                <span>Lịch sử mua hàng</span>
+                                            </a>
+                                            <a href="#" class="user-link">
+                                                <img src="images/icon/icon-user.png" alt="" class="user-icon">
+                                                <span>Cập nhật tài khoản</span>
+                                            </a>
+                                            <a href="#" class="user-link">
+                                                <img src="images/icon/icon-shop.png" alt="" class="user-icon">
+                                                <span>Gian hàng</span>
+                                            </a>
+                                            <a href="#" class="user-link">
+                                                <img src="images/icon/icon-signout.png" alt="" class="user-icon">
+                                                <span>Đăng xuất</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <!--sidebar start-->
+            <div class="sidebar">
+                <!-- <center>
+                    <img src="images/admin/Trần Thanh Lâm -1.jpg" class="profile_image" alt="">
+                    <h4>Trần Thanh Lâm</h4>
+                </center> -->
+                <div class="sidebar-items  hide-text">
+                    <a href="#"><i class="fas fa-store" style="width: 37px"></i><span>Thông tin gian hàng</span></a>
+                </div>
+                <div class="sidebar-items  hide-text">
+                    <a href="#"><i class="fas fa-bars" style="width: 37px;"></i><span>Thực đơn</span></a>
+                </div>
+                <div class="sidebar-items  hide-text">
+                    <a href="#"><i class="fas fa-images" style="width: 37px;"></i><span>Món ăn</span></a>
+                </div>
+                <div class="sidebar-items  hide-text">
+                    <a href="#"><i class="fas fa-info" style="width: 37px;"></i><span>Đơn hàng</span></a>
+                </div>
+            </div>
+            <!--sidebar end-->
+
+            <div class="article">
+                <form action="#" class="form">
+                    <div class="store">
+                        <div class="store-image">
+                            <img src="images/banner/image-d8fb52cf-200908105701.jpeg" alt="">
+                        </div>
+                        <div class="store-infor  hide-text">
+                            <p class="store-name hide-text">
+                                Súp Cua Mộc - Lê Văn Thọ
+                            </p>
+                            <p class="store-address hide-text">
+                                14/14 Nguyễn Văn Lượng, Phường 6, Quận Gò Vấp
+                            </p>
+                            <div class="store-status">
+                                <!-- Nếu trạng thái hoạt động sẽ dùng active, tick xanh lá -->
+                                <div class="checkmark active"></div>
+                                <!-- Nếu trạng thái đóng cửa sẽ dùng inactive, tick màu đỏ -->
+                                <!-- <div class="checkmark inactive"></div> -->
+                                <span>Hoạt động</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label" for="images">Ảnh cửa hàng</label>
+                        <input class="form-input-images" type="file" id="images" name="images">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label" for="name">Tên quán</label>
+                        <input class="form-input-name" type="text" id="name" name="" placeholder="Tên">
+                        <input class="form-input-name" type="text" id="name" placeholder="Loại">
+                        <input class="form-input-name" type="text" id="name" placeholder="Đường phố">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label"></label>
+                        <div class="form-note">
+                            <i class="fas fa-info" style="font-size: 20px;"></i>
+                            <p>
+                                Tên quán nên được đặt theo thứ tự: Tên quán, món đặc trưng của quán và tên đường.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label" for="email_store">Email người đại diện</label>
+                        <input class="form-input-email" type="text" id="email_store" name="email_store">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label" for="phone_store">Số điện thoại</label>
+                        <input class="form-input-phone" type="text" id="phone_store" name="phone_store">
+                    </div>
+
+                    <!-- <div class="form-row">
+                        <label class="form-label" for="name"></label>
+                        <div class="form-note">
+                            <p>
+                                Chấp nhận GIF, JPEG, PNG, BMP với kích thước tối đa 5.0MB.
+                            </p>
+                        </div>
+                    </div> -->
+                    <div class="form-row">
+                        <label class="form-label">Thành phố</label>
+                        <select class="form-select-city">
+                            <option selected disabled>Chọn thành phố</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Sài Gòn</option>
+                            <option value="3">Huế</option>
+                            <option value="3">Đà Nẵng</option>
+                          </select>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">Quận</label>
+                        <select class="form-select-distrist">
+                            <option selected disabled>Chọn Quận</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">Phường</label>
+                        <select class="form-select-ward">
+                            <option selected disabled>Chọn phường</option>
+                            <option value="1">Phường 1</option>
+                            <option value="2">Phường 2</option>
+                            <option value="3">Phường 3</option>
+                          </select>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">Địa chỉ nhà</label>
+                        <select class="form-select-address">
+                            <option selected disabled>Địa chỉ </option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Sài Gòn</option>
+                            <option value="3">Huế</option>
+                          </select>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">Loại cửa hàng</label>
+                        <select class="form-select-store">
+                            <option selected disabled>Chọn loại</option>
+                            <option value="1">Quán cơm</option>
+                            <option value="2">Nhà hàng</option>
+                            <option value="3">Quán nhậu</option>
+                          </select>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">Trạng thái hoạt động</label>
+                        <select class="form-select-status">
+                            <option value="1">Hoạt động</option>
+                            <option value="2">Đóng cửa</option>
+                          </select>
+                    </div>
+                    <div class="btn-formstore">
+                        <input type="submit" class="btn-store" value="Cập nhật">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid width">
+                <div class="row footer-container">
+                    <div class="col l-3 m-3 c-6 footer-first">
+                        <h3 class="footer-title">Công ty</h3>
+                        <ul class="footer-first-list">
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Giới thiệu</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Trung tâm Trợ giúp</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Quy chế</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Điều khoản sử dụng</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Bảo mật thông tin</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Giải quyết khiếu nại</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Liên hệ</a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Hợp tác nhân viên giao nhận </a>
+                            </li>
+                            <li class="footer-first-item">
+                                <a class="first-item-link" href="#">Đăng kí quán</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6 footer-second">
+                        <h3 class="footer-title">Ứng dụng PolyFood</h3>
+                        <ul class="footer-second-list">
+                            <li class="footer-second-item">
+                                <a href="#" class="second-item-link">
+                                    <img src="images/logo/logo-apple.png" alt="apple"></a>
+                            </li>
+                            <li class="footer-second-item">
+                                <a href="#" class="second-item-link">
+                                    <img src="images/logo/logo-android.png" alt="google">
+                                </a>
+                            </li>
+                            <li class="footer-second-item">
+                                <a href="#" class="second-item-link">
+                                    <img src="images/logo/logo-gallerry.png" alt="huawei">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6 footer-third">
+                        <img src="images/logo/header-logo.png" alt="polyfood" class="footer-logo">
+                        <p class="footer-polyfood-text">@ 2021 Polyfood</p>
+                        <ul class="footer-third-list">
+                            <li class="footer-third-item">
+                                <a href="#" class="third-item-link">
+                                    <span class="third-item-icon">
+                                        <i class="fa fa-facebook"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="footer-third-item">
+                                <a href="#" class="third-item-link">
+                                    <span class="third-item-icon">
+                                        <i class="fa fa-instagram"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6 footer-last">
+                        <h3 class="footer-title">Địa chỉ công ty</h3>
+                        <ul class="footer-last-list">
+                            <p>Công Ty Cổ Phần Foody</p>
+                            <p>Lầu G, Tòa nhà Jabes 1,</p>
+                            <p>số 244 đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TPHCM</p>
+                            <p>Giấy CN ĐKDN số: 0311828036</p>
+                            <p>do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày 11/6/2012,</p>
+                            <p>sửa đổi lần thứ 23, ngày 10/12/2020</p>
+                            <p>Số điện thoại: 1900 2042</p>
+                            <p>Email:
+                                <a href="#" class="last-list-link">infor@polyfood.com</a>
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

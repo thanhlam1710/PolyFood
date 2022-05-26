@@ -1,0 +1,367 @@
+/* Mobile and Tablet */
+
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 70px;
+        --navbar-height: 0px;
+    }
+
+    .invisible-mobile-tablet {
+        display: none;
+    }
+
+    .invisible-header {
+        display: none;
+    }
+
+    .header-search {
+        display: none;
+    }
+
+    /* Fixed giao diện header */
+    .header {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 12;
+    }
+
+    .section-heading {
+        display: none;
+    }
+}
+
+
+/* For Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .invisible-tablet {
+        display: none;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 730px) {
+    .invisible-mobile {
+        display: none;
+    }
+
+    @keyframes SearchMobile {
+        from {
+            opacity: 0;
+            top: calc(var(--header-height) / 2);
+        }
+
+        to {
+            opacity: 1;
+            top: var(--header-height);
+        }
+    }
+
+    .row {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    /* Responsive header */
+    .header {
+        display: none;
+    }
+
+    .header-contain {
+        min-height: 3rem;
+        gap: 1.5rem;
+    }
+
+    .header-mobile {
+        display: flex;
+    }
+
+    .header-contain {
+        display: flex;
+        background-color: white;
+        padding: 5px;
+        z-index: 1000;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 5px;
+        right: 20px;
+        padding: 0;
+    }
+
+    .overlay-header {
+        display: flex;
+        height: 6rem;
+        background-color: white;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .overlay-header .logo-img {
+        height: 4rem;
+    }
+
+    .item-icon {
+        position: static;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .item-admin {
+        padding: 17px 15px 17px 15px;
+        background-color: blue;
+    }
+
+    .item-history {
+        padding: 17px 20px 17px 20px;
+        background-color: #8bc13c;
+    }
+
+    .item-update {
+        padding: 17px 17px 17px 17px;
+        background-color: #f67e17;
+    }
+
+    .item-store {
+        padding: 17px 15px 17px 15px;
+        background-color: #f83b3e;
+    }
+
+    .item-logout {
+        padding: 17px 17px 17px 17px;
+        background-color: #959595;
+    }
+
+    .item-login {
+        padding: 17px 17px 17px 17px;
+        background-color: #fe7700;
+    }
+
+    .item-register {
+        padding: 17px 15px 17px 15px;
+        background-color: #4538f2;
+    }
+
+    .item-title {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #000;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .content-item a {
+        text-align: center;
+    }
+
+
+    .content-item a:hover,
+    .content-item p:hover,
+    .content-item a:focus,
+    .content-item p:focus {
+        color: #818181;
+    }
+
+    .header-location {
+        display: flex;
+    }
+
+    .header-search {
+        display: flex;
+        /* width: 100%; */
+    }
+
+    /* .btn-search{
+        width: 2rem;
+    } */
+
+    .dropdown-heading {
+        padding: 0.7rem;
+    }
+
+    .location-dropdown:hover .dropdown-show {
+        display: flex;
+
+        z-index: 2;
+    }
+
+    .search-form {
+        height: 3rem;
+    }
+
+    .header-search input {
+        width: 100%;
+        height: 3.3rem;
+
+    }
+
+    .btn-search {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .header-cart {
+        display: flex;
+        width: 3rem;
+    }
+
+    .cart-logo {
+        height: 3rem;
+        margin-left: 10%;
+        margin-right: 30%;
+    }
+
+    .dropdown-heading {
+        height: 50%;
+    }
+
+    /* end header */
+
+    /* start main */
+    .main {
+        padding: 0;
+        margin-top: 0rem;
+    }
+
+    .section-heading {
+        display: flex;
+        height: 100%;
+    }
+
+    .heading-contain {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        padding-bottom: 0;
+    }
+
+    /* start tag */
+    .content-tag {
+        display: none;
+    }
+
+    .content-tag-mobile {
+        display: flex;
+        position: relative;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        height: 6rem;
+        max-width: 100%;
+        padding: 0%;
+        overflow: hidden;
+        z-index: 0;
+        background-color: whitesmoke;
+
+    }
+
+    .tag-list {
+        max-width: 740px;
+        width: 100%;
+        position: relative;
+        top: 1rem;
+        left: 1rem;
+        overflow-x: scroll;
+    }
+
+    /* end tag */
+
+    /* start banner */
+
+    .slider-wrapper-mobile {
+        display: inline-block;
+        overflow: hidden;
+        height: auto;
+        position: relative;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+
+    }
+
+    .slider-wrapper {
+        display: none;
+    }
+
+    .slider-main {
+        max-height: 100%;
+    }
+
+    .slider-img {
+        width: 50%;
+        height: auto;
+        margin: 5px;
+
+    }
+
+    .slider-prev,
+    .slider-next {
+        display: none;
+        overflow: hidden;
+    }
+
+    /* end banner */
+
+    /* promotion section */
+    .section-promotion {
+        margin-top: 0;
+        margin: 1rem;
+    }
+
+    /* end promotion section */
+
+    /* start product-item */
+    .product-item {
+        margin-bottom: 1rem;
+    }
+
+    .product-img {
+        height: 12.5rem;
+    }
+
+    /* end product-item */
+
+    /* start section-filter */
+    .section-filter {
+        margin: 1rem;
+    }
+
+    .filter-heading {
+        font-size: 1.5rem;
+    }
+
+    .filter-btn {
+        margin-right: 0.5rem;
+    }
+
+    .filter-highlight {
+        margin-right: 1rem;
+    }
+
+    .filter-label {
+        width: 90%;
+    }
+
+    .filter-select select {
+        padding: 5px;
+    }
+
+    /* end section-filter */
+
+    .section-gallery {
+        margin: 1rem;
+    }
+
+    .footer {
+        display: none;
+    }
+}
